@@ -1,0 +1,47 @@
+.card {
+  /* position: relative; */
+  background-color: var(--mantine-color-body);
+  width: 100%;
+  min-width: rem(200px);
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: var(--mantine-shadow-lg);
+  transform: translate(0, -2px);
+  transition: 0.5s;
+}
+.card:active {
+  box-shadow: var(--mantine-shadow-sm);
+  transform: translate(0, 0);
+  transition: 0.3s;
+}
+
+.rating {
+  position: absolute;
+  top: var(--mantine-spacing-xs);
+  right: 12px;
+  pointer-events: none;
+}
+
+.title {
+  /* display: block; */
+  margin-top: var(--mantine-spacing-md);
+  margin-bottom: 5px;
+}
+
+.summary {
+  /* height: 100%; */
+  overflow: hidden;
+}
+.action {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));
+
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-6));
+  }
+}
+
+.footer {
+  margin-top: var(--mantine-spacing-md);
+  bottom: 0;
+}
